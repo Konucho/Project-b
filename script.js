@@ -2,6 +2,19 @@
 const searchBtn = document.getElementById("searchBtn");
 const search = document.getElementById("search");
 const content = document.getElementById("content");
+const productOne = document.getElementById("productOne");
+const productTwo = document.getElementById("productTwo");
+const productThree = document.getElementById("productThree");
+const changeTextOne = document.getElementById("productOne");
+const changeTextTwo = document.getElementById("productTwo");
+const changeTextThree = document.getElementById("productThree");
+const originalTextOne = document.getElementById("productOne").innerHTML;
+const originalTextTwo = document.getElementById("productTwo").innerHTML;
+const originalTextThree = document.getElementById("productThree").innerHTML;
+
+productOne.textContent = originalTextOne;
+productTwo.textContent = originalTextTwo;
+productThree.textContent = originalTextThree;
 
 searchBtn.addEventListener("click", () => {
     search.style.padding = "20px"
@@ -22,4 +35,42 @@ searchBtn.addEventListener("click", () => {
         }
     });
 })
+
+
+
+productOne.addEventListener("mouseover", () => {
+    productOne.textContent = "Więcej informacji";
+    productOne.style.padding = "20px 35px 20px 35px";
+    productOne.style.backgroundColor = "#f5744b";
+}); 
+
+productTwo.addEventListener("mouseover", () => {
+    productTwo.textContent = "Więcej informacji";
+    productTwo.style.padding = "20px 100px 20px 100px";
+    productTwo.style.backgroundColor = "#fd6f5d";
+}); 
+
+productThree.addEventListener("mouseover", () => {
+    productThree.textContent = "Więcej informacji";
+    productThree.style.padding = "20px 35px 20px 35px";
+    productThree.style.backgroundColor = "#ef3c2c";
+}); 
+
+productOne.addEventListener("mouseout", () => {
+    productOne.style.padding = "15px 30px 15px 30px";
+    productOne.style.backgroundColor = "black"
+    productOne.textContent = originalTextOne;
+}); 
+
+productTwo.addEventListener("mouseout", () => {
+    productTwo.style.padding = "15px 30px 15px 30px";
+    productTwo.style.backgroundColor = "black";
+    productTwo.textContent = originalTextTwo;
+}); 
+
+productThree.addEventListener("mouseout", () => {
+    productThree.style.padding = "15px 30px 15px 30px";
+    productThree.style.backgroundColor = "black";
+    productThree.textContent = originalTextThree;
+}); 
 
