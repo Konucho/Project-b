@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <title>Bojler sklep</title>
+</head>
+<body>
+    <div id="wrap">
+        <nav id="navigation">
+            <div id="header">
+                <div id="logo-one">
+                    <a href="main.html">
+                        <img id="logo-two" src="logo.png">
+                    </a>
+                </div>
+                <div id="mid-buttons">
+                    <div class="mid-button"><p>Sklep</p></div>
+                    <div class="mid-button"><p>O nas</p></div>
+                    <div class="mid-button"><p>FAQ</p></div>
+                    <div class="mid-button"><p>Pomoc</p></div>
+                    <div class="mid-button"><p>Kontakt</p></div>
+                </div>
+                <div id="right-buttons">
+                    <div class="right-button">
+                        <div id="search-contain" class="icons">
+                            <i id="searchBtn"class="fi fi-rr-search"></i>
+                            <input type="text" id="search" placeholder="" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="right-button">
+                        <a class="icons "href="main.html">
+                            <i class="fi fi-rr-shopping-cart"></i> 
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div id="content">
+            <div id="advertisment-block">
+                <div id="video">
+                    <video style="border-radius: 20px;" width="1440" height="608" autoplay loop muted>
+                        <source src="Boilers-animation.mp4" type="video/mp4">
+                    </video>    
+                </div>
+            </div>
+            <div id="advertisment-buttons">
+                <div class="ad-button">
+                    <a href="#" class="btn">HeatMaster Pro</a>
+                </div>
+                <div class="ad-button">
+                    <a href="#" class="btn">ThermalCraft Infinity 2000</a>
+                </div>
+                <div class="ad-button">
+                    <a href="#" class="btn">SteamElite Xpress</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        const searchBtn = document.getElementById("searchBtn");
+        const search = document.getElementById("search");
+
+        searchBtn.addEventListener("click", () => {
+            search.style.width = "600px";
+            search.style.paddingLeft = "60px";
+            search.style.cursor = "text";
+            search.style.backgroundColor = "white";
+            search.focus();
+        })
+
+    </script>
+</body>
+</html>
