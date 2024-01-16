@@ -39,19 +39,19 @@ searchBtn.addEventListener("click", () => {
 
 
 productOne.addEventListener("mouseover", () => {
-    productOne.textContent = "Więcej informacji";
+    productOne.textContent = "Dowiedz się więcej";
     productOne.style.padding = "20px 35px 20px 35px";
     productOne.style.backgroundColor = "#f5744b";
 }); 
 
 productTwo.addEventListener("mouseover", () => {
-    productTwo.textContent = "Więcej informacji";
-    productTwo.style.padding = "20px 100px 20px 100px";
+    productTwo.textContent = "Dowiedz się więcej";
+    productTwo.style.padding = "20px 35px 20px 35px";
     productTwo.style.backgroundColor = "#fd6f5d";
 }); 
 
 productThree.addEventListener("mouseover", () => {
-    productThree.textContent = "Więcej informacji";
+    productThree.textContent = "Dowiedz się więcej";
     productThree.style.padding = "20px 35px 20px 35px";
     productThree.style.backgroundColor = "#ef3c2c";
 }); 

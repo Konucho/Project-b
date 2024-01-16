@@ -93,7 +93,6 @@ body {
 }
 
 #advertisment-buttons {
-    flex-grow: 1;
     justify-content: space-around;
     align-items: center;
     position: relative;
@@ -203,4 +202,78 @@ a:link {
     &:focus {
         outline: none;
     }
+}
+
+#Best-sellers {
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+#Discount {
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+}
+
+
+.Product {
+    border-radius: 30px;
+}
+
+h1 {
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 38px;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.Name-product-blur {
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    position: absolute;
+    max-width: 1440px;
+    background-color: rgb(255 255 255 / 30%);
+    backdrop-filter: blur(10px);
+    width: 400px;
+    height: 111px;
+    border-radius: 0px 0px 20px 20px;
+    margin-top: 600px;
+}
+
+.Name-product {
+    font-size: 20px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    margin-left: auto;
+}
+
+.Transparent-button {
+    z-index: 2;
+    position: absolute;
+    width: 400px;
+    height: 715px;
+    border-radius: 20px;
 }
